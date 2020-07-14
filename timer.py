@@ -28,3 +28,13 @@ class Timer:  #@save
     def cumsum(self):
         """Return the accumulated time."""
         return np.array(self.times).cumsum().tolist()
+
+def main():
+	timer = Timer()
+	timer.start()
+	time.sleep(2)
+	print(timer.stop())
+
+
+if __name__ == '__main__':
+	main()
